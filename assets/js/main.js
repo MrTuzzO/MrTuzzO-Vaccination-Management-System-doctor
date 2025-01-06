@@ -77,6 +77,7 @@ function setupAuthButtons() {
         document.getElementById('logout-btn').addEventListener('click', logout);
     } else {
         authButtons.innerHTML = `<a href="dr_login.html" class="btn btn-outline-light">Login</a>`;
+        document.getElementById("add_camp").style.display = "none";
     }
 }
 
