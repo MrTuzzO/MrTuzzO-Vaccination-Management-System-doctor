@@ -45,7 +45,7 @@ async function logout() {
             localStorage.removeItem('authToken');
             localStorage.clear();
             // alert('Logout successful!');
-            window.location.href = 'login.html';
+            window.location.href = 'dr_login.html';
         }
     } catch (error) {
         console.error('An unexpected error occurred during logout:', error);
