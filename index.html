@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <!-- Main JS -->
     <script src="assets/js/main.js" defer></script>
+    <script>
+        if(!localStorage.getItem('authToken')) {
+            alert('You are not logged in. Please login first.');
+            window.location.href = 'dr_login.html';
+        }
+    </script>
 </head>
 
 <body>

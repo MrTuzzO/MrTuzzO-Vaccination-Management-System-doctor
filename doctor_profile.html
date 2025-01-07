@@ -56,7 +56,8 @@
                             <td class="text-muted" id="contact_number"></td>
                         </tr>
                         <tr>
-                            <th class="text-primary fw-bold"><i class="fa-solid fa-hospital me-2"></i>Hospital Name:</th>
+                            <th class="text-primary fw-bold"><i class="fa-solid fa-hospital me-2"></i>Hospital Name:
+                            </th>
                             <td class="text-muted" id="hospital_name"></td>
                         </tr>
                         <tr>
@@ -81,45 +82,18 @@
         </div>
 
 
-        <!-- Appointment History Section -->
+        <!-- Canpaign History Section -->
         <section>
-            <p class="h2 my-3">Your Campigns: </p>
+            <p class="h2 my-3">Your Campaigns:</p>
             <div class="card-holder row mb-3">
-                <div class="col-md-6">
-                    <div class="card mb-4 rounded shadow border-0 vc_card">
-                        <div class="card-header bg-primary text-white text-center fs-5 fw-bold">
-                            <i class="fas fa-syringe me-2"></i>COVID-19 Booster Campaign
-                        </div>
-                        <div class="card-body p-4">
-                            <h5 class="card-title text-secondary fw-semibold">COVID-19 Vaccine</h5>
-                            <p class="card-text text-muted">
-                                <strong>Description:</strong> A booster dose campaign for COVID-19 vaccine.<br>
-                                <strong><i class="fas fa-calendar-day me-2"></i>Start Date:</strong> 2024-12-20<br>
-                                <strong><i class="fas fa-calendar-times me-2"></i>End Date:</strong> 2025-01-10<br>
-                                <strong><i class="fas fa-pills me-2"></i>Doses:</strong> 2 (Interval: 28 days)<br>
-                                <strong><i class="fas fa-capsules me-2"></i>Available Vaccines:</strong> 500
-                            </p>
-                            <div class="d-flex flex-wrap gap-2">
-                                <a href="campaign_detail.html" class="btn btn-primary px-4 mb-2">
-                                    <i class="fas fa-calendar-check me-2"></i>Campaign Details
-                                </a>
-                                <button class="btn btn-warning px-4 mb-2 edit-btn">
-                                    <i class="fas fa-edit me-2"></i>Edit
-                                </button>
-                                <button class="btn btn-danger px-4 mb-2 delete-btn">
-                                    <i class="fas fa-trash-alt me-2"></i>Delete
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                <!-- Campaign cards will be dynamically inserted here -->
             </div>
         </section>
     </main>
-    
+
     <div id="footer"></div>
     <script src="assets/js/dr_profile_details.js"></script>
+    <script src="assets/js/dr_camp_post_list_delete.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
