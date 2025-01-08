@@ -42,20 +42,20 @@ document.querySelector('form').addEventListener('submit', async function (e) {
             if (profileResponse.ok) {
                 const userInfo = profileData.user.user; // Extract the nested user info
                 const profileInfo = profileData.user;
-                
 
-                if(userInfo.user_type !== 'doctor') {
+
+                if (userInfo.user_type !== 'doctor') {
                     showAlert('You are not authorized to access this page.', 'warning');
                     localStorage.removeItem('authToken');
                     localStorage.clear();
                     return;
                 }
 
-                localStorage.setItem('userId', userInfo.id);
-                localStorage.setItem('drId', profileInfo.id);
+                // localStorage.setItem('userId', userInfo.id);
+                // localStorage.setItem('drId', profileInfo.id);
                 localStorage.setItem('username', userInfo.username);
                 localStorage.setItem('userType', userInfo.user_type);
-                
+
                 // alert('Login successful!');
                 window.location.href = 'index.html';
             } else {
